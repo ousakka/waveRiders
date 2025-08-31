@@ -1,0 +1,497 @@
+:root {
+  /* font style */
+  --mainFont: "Inter", sans-serif;
+  /* Fonts Sizes*/
+  --font-xxl: 4.5rem;
+  --font-xl: 4rem;
+  --font-lg: 2rem;
+  --font-md: 1.5rem;
+  --font-sm: 1.25rem;
+  --font-xs: 1rem;
+  /* Colors Palette */
+  --lightGray: #f5f5f5;
+  --MidGray: #d9d9d9;
+  --darkGray: #757575;
+  --lightBlue: #d1e9f0;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* Header section  */
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--MidGray);
+  position: relative;
+}
+
+.headerLogo {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  font-family: var(--mainFont);
+  font-size: var(--font-xs);
+  align-items: center;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.grayButton {
+  background-color: var(--lightGray);
+  border-radius: 0.5rem;
+  width: 3.8rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 0.6rem;
+}
+
+.headerLogo {
+  width: 5rem;
+  height: 5rem;
+}
+/* Hero section */
+.blackButton {
+  background-color: var(--black);
+  border-color: var(--black);
+  color: var(--white);
+  gap: 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: auto;
+  height: 2.5rem;
+  font-family: var(--mainFont);
+  font-size: 1rem;
+}
+
+.background {
+  width: 100%;
+  height: 32.75rem;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://i.postimg.cc/pVJ8h4Zb/14b01da8e4ef01e5bfe16019c2af39e2eab83b99.jpg")
+      center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.background h1 {
+  font-family: var(--mainFont);
+  font-size: var(--font-xxl);
+}
+
+.background h2 {
+  font-family: var(--mainFont);
+  font-weight: 400;
+  font-weight: var(--font-lg);
+}
+/* Gallery section */
+.imagesRow {
+  display: flex;
+  height: 29rem;
+  gap: 3rem;
+  padding: 4rem;
+  background-color: var(--lightBlue);
+  border-radius: 2rem;
+  opacity: 0.8;
+  align-items: center;
+}
+
+.imagesRow img {
+  width: 45%;
+  height: 21rem;
+  border-radius: 1rem;
+}
+/* Cards section */
+.cardsGrid {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 3rem;
+  height: 34rem;
+  width: 100%;
+  justify-content: center;
+  padding: 4rem;
+  border-radius: 1rem;
+  width: auto;
+}
+
+.gridHeader {
+  grid-row: 1;
+}
+
+.cardsContainer {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.card {
+  display: flex;
+  min-width: 15rem;
+  text-align: left;
+  height: 19.25rem;
+}
+
+.card img {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+}
+
+.cardTitle {
+  font-size: var(--font-md);
+  font-family: var(--mainFont);
+  font-weight: 600;
+}
+.cardSubtitle {
+  font-size: var(--font-sm);
+  font-family: var(--mainFont);
+  color: var(--darkGray);
+  font-weight: 400;
+}
+.text {
+  font-family: var(--mainFont);
+  font-size: var(--font-xs);
+  color: var(--darkGray);
+  font-weight: 400;
+}
+
+.lihgtBlueBackground {
+  background-color: var(--lightBlue);
+  border-radius: 2rem;
+  height: 24rem;
+}
+
+/* testimonial section  */
+.testimonialCardsContainer {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: auto;
+}
+
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  height: 9.8rem;
+  text-align: left;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+/* Footer section */
+
+.footerStyling {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--MidGray);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  width: 12rem;
+}
+
+.footerlogo {
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: flex-start;
+}
+
+.socialMediaIcons {
+  width: 15rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.socialMediaIcons a img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footerCenter {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.footerColumn {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footerColumn p:first-child {
+  font-weight: bold;
+  margin-bottom: var(--font-xs);
+}
+
+.footerColumn p {
+  margin-bottom: var(--font-xs);
+}
+
+.footerMap iframe {
+  width: 16.31rem;
+  height: 21.75rem;
+}
+
+/* Responsive for tablette */
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  /* Gallery section */
+
+  .imagesRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .imagesRow img {
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  /* Cards section */
+
+  .cardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .testimonialCardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    justify-items: center;
+    gap: 0.5rem;
+  }
+
+  .gridHeader {
+    grid-row: 1;
+    text-align: center;
+  }
+  /* testimonial section  */
+
+  .testimonialCard {
+    width: 50%;
+    padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 15rem;
+  }
+
+  .footerStyling {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .footerLeft {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  .socialMediaIcons {
+    justify-content: center;
+    width: auto;
+  }
+
+  .footerCenter {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footerColumn {
+    width: auto;
+    text-align: center;
+  }
+
+  .footerMap iframe {
+    width: 90%;
+    max-width: 350px;
+    height: 200px;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width:768px) {
+  /* Header section  */
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    gap: 0.5rem;
+    display: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+  }
+
+  .menu.active {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    height: 10rem;
+    margin: 1.5rem;
+    border-bottom: 1px solid var(--MidGray);
+    background-color: var(--white);
+  }
+
+  .burgerMenu {
+    display: block;
+    border: none;
+    align-items: flex-end;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .headerLogo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Hero section */
+
+  .background {
+    height: auto;
+    padding: 2rem;
+    width: auto;
+  }
+  .background h1 {
+    font-size: var(--font-lg);
+  }
+  .background h2 {
+    font-size: var(--font-sm);
+  }
+  .background .blackButton {
+    font-size: var(--font-xs);
+    padding: 0.5rem 1rem;
+  }
+
+  /* Gallery section */
+
+  .imagesRow {
+    flex-direction: column;
+    padding: 2rem;
+    height: auto;
+  }
+
+  .imagesRow img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Cards section */
+
+  .cardsGrid {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  .cardsContainer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .card {
+    display: flex;
+    width: auto;
+  }
+
+  /* testimonial section  */
+
+  .testimonialCardsContainer {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .testimonialCard {
+    min-width: auto;
+    width: auto;
+    align-items: center;
+  }
+
+  /* Footer section */
+  .footerStyling {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .footerLeft {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .footerlogo {
+    justify-content: flex-start;
+  }
+
+  .socialMediaIcons {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .footerCenter {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .footerColumn {
+    width: 100%;
+  }
+
+  .footer-map iframe {
+    width: 100%;
+    height: 16rem;
+  }
+}
